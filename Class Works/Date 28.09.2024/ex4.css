@@ -1,0 +1,32 @@
+.container{
+    width:400px;
+    height:350px ;
+    border: 2px solid black;
+    position: relative;
+}
+
+.Box1{
+    width: 100px;
+    height: 100px;
+    background-color: lightcoral;
+    position: relative;
+    top: 20px;
+    left: 30px;
+}
+
+.Box2{
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    position: relative;
+    top: 50px;
+    left: 60px;
+}
+.Box3{
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}

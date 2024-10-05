@@ -1,0 +1,61 @@
+<!--Create a photo showcase webpage displaying three photos in a row with captions below each. 
+
+Include a blockquote for each photo with a famous quote and emphasize the author's name 
+
+using tags like <strong> or <em>.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Showcase</title>
+    <style>
+        table {
+            width:50%;
+            border-collapse: collapse;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        th, td {
+            padding: 15px;
+            border: 1px solid black;
+            text-align: center;
+        }
+        blockquote {
+            font-style: italic;
+            margin: 10px 0;
+        }
+        .author {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Image Gallery</h1>
+    <table>
+        <tr>
+            <td>
+                <img src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg" alt="single tree growing clouded sky during sunset surrounded by grass" width="300" height="200">
+                <blockquote>
+                    "May every sunrise hold more promise and every sunset more peace."
+                    <span class="author">- Umair Siddiqui, Author</span>
+                </blockquote>
+            </td>
+            <td>
+                <img src="https://d2zp5xs5cp8zlg.cloudfront.net/image-68121-800.jpg" alt="dog" width="300" height="200">
+                <blockquote>
+                    "The dog is a gentleman; I hope to go to his heaven, not man's."
+                    <span class="author">- Mark Twain</span>
+                </blockquote>
+            </td>
+            <td>
+                <img src="https://cdn.blackpoolgrand.co.uk/app/uploads/2021/03/famous-Quotes-about-reading.jpg" alt="book image" width="300" height="200">
+                <blockquote>
+                    "Books and doors are the same thing. You open them, and you go through into another world."
+                    <span class="author">- Jeanette Winterson</span>
+                </blockquote>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
