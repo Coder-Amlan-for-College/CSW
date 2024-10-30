@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn").click(function () {
+                $("#call").hide("slow",function(){
+                    alert("The paragraph is hidden");
+                });
+            });
+            $("#btn1").click(function () {
+                $("#wcall").hide();
+                alert("The paragraph is hidden");
+            });
+        });
+    </script>
+    <style>
+        body{
+            display: flex;
+        }
+        div{
+            margin:10%;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <button id="btn">Hide with call back</button>
+    <p id="call">Call Back</p>
+</div>
+<div>
+    <button id="btn1">Hide without call back</button>
+    <p id="wcall">Without callback</p>
+</div>
+</body>
+</html>
