@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#flip").click(function(){
+                $("#panel").slideDown("slow");
+            });
+            $("#flip1").click(function(){
+                $("#panel1").css("color","red").slideUp("slow").slideDown(2000);
+            });
+            $("#flip2").click(function(){
+                $("#panel2").slideToggle("slow");
+            });
+        });
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            display:flex;
+            justify-content: space-between;
+        }
+        #box {
+            width: 30%;             
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            flex-direction: column;
+            transition: height 0.3s ease;
+            height: auto;
+        }
+        #flip, #flip1, #flip2 {
+            background: #5ec153;
+            color: white;
+            padding: 20px;
+            cursor: pointer;
+            text-align: center;
+            border-radius: 5px;
+            margin: 0; 
+        }
+        #panel, #panel2 {
+            display: none;
+            padding: 10px;
+            border-top: 1px solid #ccc;
+            transition: all 0.3s ease;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="flip">Click to slide down panel</div>
+        <div id="panel">Slidebar</div>
+    </div>
+    <div id="box">
+        <div id="flip1">Click to slide up panel</div>
+        <div id="panel1">Slidebar</div>
+    </div>
+    <div id="box">
+        <div id="flip2">Click to toggle panel</div>
+        <div id="panel2">Slidebar</div>
+    </div>    
+</body>
+</html>
