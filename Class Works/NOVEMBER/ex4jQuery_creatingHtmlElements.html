@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            ("#btn1").click(function(){
+             $("img").before("<b>Before</b>") 
+          });
+          $("#btn2").click(function(){
+             $("img").after("<i>After</i>")
+          });
+        });
+        function afterText(){
+            var txt1 = "<b>Add</b>";
+            var txt2 = $("<i></i>").text("multiple ");
+            var txt3 = document.createElement("b");
+            txt3.innerHTML = "elements!";
+            $("img").after(txt1,txt2,txt3);
+        }
+    </script>
+    <style>
+        div{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div style="margin-top: 30%;"><img src="https://plus.unsplash.com/premium_photo-1672116453187-3aa64afe04ad?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" height="200px" width="200px" alt="jQuery"></div>
+    <div>
+        <button id="btn1">Insert Before</button>
+        <button id="btn2">Inster After</button><br>
+    </div>
+    <div style="margin-top: 10px;">
+        <button id="btn3"onclick="afterText()">Insert multiple Elements</button>
+    </div>
+</body>
+</html>
