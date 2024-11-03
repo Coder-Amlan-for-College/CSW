@@ -49,19 +49,22 @@
             });
 
             $("#fadein").click(function(){
-                $("#div1").fadeTo("slow",0.15);
-                $("#div2").fadeTo("slow",0.4);
-                $("#div3").fadeTo("slow",0.7);
-            });
-
-            
-            $("#show").click(function(){
-                $("p").show(1000);
+                $("#div4").fadeIn();
+                $("#div5").fadeIn("slow");
+                $("#div6").fadeIn(3000);
             });
             
-            $("#toggle").click(function(){
-                $("h1").toggle();
+            $("#fadeout").click(function(){
+                $("#div11").fadeOut("fast");
+                $("#div22").fadeOut("slow");
+                $("#div33").fadeOut(3000);
             });
+            $("#fadetoggle").click(function(){
+                $("#div44").fadeToggle();
+                $("#div55").fadeToggle("slow");
+                $("#div66").fadeToggle(3000);
+            });
+            
         });
     </script>
 </head>
