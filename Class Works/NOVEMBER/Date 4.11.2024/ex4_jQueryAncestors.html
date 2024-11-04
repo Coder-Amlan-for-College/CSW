@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ancestor</title>
+    <style>
+        .ancestor *{
+            display: block;
+            border: 2px solid lightgray;
+            color: lightgray;
+            padding: 5px;
+            margin: 15px;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        //   $("span").parent().css({"color":"red","border":"2px solid red"});
+        //   $("span").parents().css({"color":"red","border":"2px solid red"});
+           $("span").parentsUntil("div").css({"color":"red","border":"2px solid red"});
+        });
+        
+    </script>
+</head>
+<body>
+    <div class="ancestor">
+        <div style="width: 500px;">div (great grandparent)
+            <ul>ul (grandparent)
+                <li>li (direct Parent) <span>Span</span></li>
+            </ul>
+        </div>
+        
+        <div style="width:500px">
+            div (grandparent)
+            <p>p(direct Parent)
+                <span>span</span>
+            </p>
+           
+        </div>
+
+    </div>
+</body>
+</html>
