@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siblings</title>
+    <style>
+        .siblings{
+            display: block;
+            border: 2px solid rgb(165,226, 52);
+            color: rgb(8, 8, 8);
+            padding: 5px;
+            margin: 15px;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        //   $("h2").siblings().css({"color":"red","border":"2px solid red"});
+        //   $("h2").siblings("p").css({"color":"red","border":"2px solid red"});
+        //   $("h2").next().css({"color":"red","border":"2px solid red"});
+        //   $("h2").prev().css({"color":"red","border":"2px solid red"});
+        //   $("h2").nextAll().css({"color":"red","border":"2px solid red"});
+        //   $("h2").prevAll().css({"color":"red","border":"2px solid red"});
+          $("h2").nextUntil("p").css({"color":"red","border":"2px solid red"});
+          $("h2").nextUntil("p").css({"color":"red","border":"2px solid red"}); 
+        });
+        
+    </script>
+</head>
+<body class="siblings">
+    <div>
+        div (parent)
+        <p>p</p>
+        <span>Span</span>
+        <h2>h2</h2>
+        <h3>h3</h3>
+        <h4>h4</h4>
+        <h5>h5</h5>
+        <h6>h6</h6>
+        <p>p</p>
+    </div>
+</body>
+</html>
