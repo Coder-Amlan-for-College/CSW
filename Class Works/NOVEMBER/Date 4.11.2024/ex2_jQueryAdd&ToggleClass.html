@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add and Toggle Class</title>
+    <title>Add Remove and Toggle Class</title>
     <style>
       .important{
         font-weight: bold;
@@ -24,6 +24,9 @@
               $("h1,h2,p").toggleClass("green");
               $("div").toggleClass("important green");
            });
+           $("#b3").click(function(){
+              $("h1,h2,p").removeClass("green");
+           });
          });
      </script>
 </head>
@@ -36,5 +39,6 @@
     <br>
     <button id="b1">Add class to elements</button>
     <button id="b2">Toggle class to elements</button>
+    <button id="b3">Remove class elements</button>
 </body>
 </html>
