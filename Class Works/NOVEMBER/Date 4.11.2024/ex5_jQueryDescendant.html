@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descendants</title>
+    <style>
+      .descendants *{
+        display: block;
+            border: 2px solid lightgray;
+            color: lightgray;
+            padding: 5px;
+            margin: 15px;
+      }
+    </style>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script>
+          $(document).ready(function(){
+            $("div")
+            .children()
+            // .children("p.first")
+            // .find("span")
+            // .find("*")
+            .css({color:"red",border:"2px solid red"});
+          });
+          
+      </script>
+</head>
+<body>
+    <div class="descendants" style="width: 500px">
+        div (current element)
+       <p class="first">
+        p(child)
+        <span>Span (grandchild)</span>
+       </p>
+       <p class="second">
+         p(child)
+         <span>Span (grandchild)</span>
+       </p>
+    </div>
+</body>
+</html>
