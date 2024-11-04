@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add CSS</title>
+    <style>
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $("#b1").click(function(){
+             alert("Background color of p1: "+$("#p1").css("background-color"));
+             alert("Background color of p2: "+$("#p2").css("background-color"));
+             alert("Background color of p3: "+$("#p3").css("background-color"));
+          });
+          $("#b2").click(function(){
+            $("#p1").css("background-color","aqua");
+            $("#p2").css("background-color","brown");
+            $("#p3").css({"background-color":"lavender","font-size":"200%"});
+          });
+          
+        });
+    </script>
+</head>
+<body>
+    <h1>This is a heading</h1>
+    <p id="p1" style="background-color: dodgerblue;">This is the first paragraph</p>
+    <p id="p2" style="background-color: orange;">This is the second paragraph</p>
+    <p id="p3" style="background-color: yellow;">This is the third paragraph</p>
+    <button id="b1">Show the background color of each paragraph</button>
+    <button id="b2">Change the background color of each paragraph</button>
+</body>
+</html>
