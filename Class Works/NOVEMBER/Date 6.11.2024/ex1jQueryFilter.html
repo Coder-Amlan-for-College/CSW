@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $("div").first().css("background","lightgreen");
+          $("div").last().css("background-color","aqua");
+          $("div").eq(1).css({"background-color":"yellow","":"yellow"}) 
+        });
+        
+    </script>
+</head>
+<body>
+    <h1>To Use First Method For Traversing</h1>
+    <p class="name">This paragraph does not belong to any div</p>
+    <div style="border:3px solid blue">
+        <p>This is the First paragraph in this div</p>
+        <p class="name">This is the second paragraph in this div</p>
+    </div>
+    <br>
+    <div style="border:3px solid blue">
+        <p class="name">This is the first paragraph in this div</p>
+        <p>This is the Second paragraph in this div</p>
+    </div>
+    <br>
+    <div style="border:3px solid blue">
+        <p>This is the First paragraph in this div</p>
+        <p>This is the second paragraph in this div</p>
+    </div>
+    <br>
+</body>
+</html>
