@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H7</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+          $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("div").addClass("highlight").removeClass("dim");
+            });
+            $("#btn2").click(function(){
+                $("div").addClass("dim").removeClass("highlight");
+            });
+          });
+    </script>
+</head>
+<body>
+    <table>
+        <caption style="text-align: center;">Student Data</caption>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Remove Data</th>
+        </tr>
+        <tr>
+            <td>Amlan</td>
+            <td>20</td>
+            <td><button class="">Remove</button></td>
+        </tr>
+        <tr>
+            <td>Anshuman</td>
+            <td>20</td>
+            <td><button>Remove</button></td>
+        </tr>
+        <tr>
+            <td>Aman</td>
+            <td>19</td>
+            <td><button>Remove</button></td>
+        </tr>
+    </table>
+    button#
+</body>
+</html>

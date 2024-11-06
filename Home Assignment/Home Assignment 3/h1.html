@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+          $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("body").css("background-color","red");
+            });
+            $("#btn2").click(function(){
+                $("body").css("background-color","blue");
+            });
+            $("#btn3").click(function(){
+                $("body").css("background-color","green");
+            });
+            $("#btn4").click(function(){
+                $("div").toggle();
+            });
+          });
+    </script>
+    <style>
+        div{
+            width:400px;
+            height: 150px;
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn1">Red</button>
+    <button id="btn2">Blue </button>
+    <button id="btn3">Green</button>
+    <br>
+    <br>
+    <button id="btn4">Click Here</button>
+    <div>
+        <p> <br>
+            This is inside div. <br>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda totam molestiae consequuntur autem reprehenderit hic quasi, ullam, non sed illum harum dolores cupiditate sequi qui similique sapiente officiis architecto reiciendis?
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+          $(document).ready(function(){
+            $("div").click(function(){
+                $("div").text("Clicked!");
+            });
+            $("div").dblclick(function(){
+                $("div").css("background-color","orange");
+            });
+            $("div").mouseenter(function(){
+                $("div").css("border","2px solid green");
+            });
+            $("div").mouseleave(function(){
+                $("div").css("border","2px solid black");
+            });
+
+
+          });
+    </script>
+    <style>
+        div{
+            width:400px;
+            height: 150px;
+            background-color: antiquewhite;
+            color: blue;
+            border: 2px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p> <br>
+            This is inside div.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda totam molestiae consequuntur autem reprehenderit hic quasi, ullam, non sed illum harum dolores cupiditate sequi qui similique sapiente officiis architecto reiciendis?
+        </p>
+    </div>
+</body>
+</html>

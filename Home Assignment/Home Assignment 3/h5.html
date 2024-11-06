@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+          $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("ul").append("<li>JS</li>");
+            });
+            $("#btn2").click(function(){
+                $("ul").prepend("<li>Introduction To Full Stack Development</li>");
+            });
+            $("#btn3").click(function(){
+                $("ul").after("<p>Topics Updated</p>");
+            });
+            $("#btn4").click(function(){
+                $("ul").before("<h2>List Of Topics Covered</h2>");;
+            });
+          });
+    </script>
+</head>
+<body>
+    <ul>
+        <li>Getting Started With Full Stack</li>
+        <li>HTML</li>
+        <li>CSS</li>
+    </ul>
+    <button id="btn1">Append</button>
+    <button id="btn2">Prepend</button>
+    <button id="btn3">After</button>
+    <button id="btn4">Before</button>
+</body>
+</html>

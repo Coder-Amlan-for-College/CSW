@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H6</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+          $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("div").addClass("highlight").removeClass("dim");
+            });
+            $("#btn2").click(function(){
+                $("div").addClass("dim").removeClass("highlight");
+            });
+          });
+    </script>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            background-color: rgb(0, 39, 231);
+            color: white;
+            text-align: center;
+        }
+        .highlight{
+          background-color: yellow;
+          color: black;   
+        }
+        .dim{
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <div><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur provident officia cumque odio eveniet minima eum vitae at praesentium porro nesciunt sed quis, reprehenderit natus ullam, nemo inventore obcaecati deleniti!</p></div>
+      <br>
+    <button id="btn1">Add Highlight</button>
+    <button id="btn2">Add Dim</button>
+</body>
+</html>
