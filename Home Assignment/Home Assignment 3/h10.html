@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <style>
+        .hoverable:hover {
+            background-color: #f0f0f0;
+        }
+        .error {
+            color: red;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <form id="signUpForm">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" class="hoverable"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" class="hoverable"><br><br>
+
+        <label for="contact">Contact Number:</label><br>
+        <input type="text" id="contact" class="hoverable"><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" class="hoverable" pattern="(?=.*[a-z])(?=.*[A-z])(?=.*[0-9]).{8,}"title="Password must contain at least one uppercase letter, one lowercase letter, one number, and be at least 8 characters long."><br><br>
+
+        <input type="submit" value="Sign Up" class="hoverable">
+        <p id="errorMessage" class="error"></p>
+    </form>
+
+    <script>
+        $(document).ready(function() {
+            $("#signUpForm").submit(function(event) {
+                event.preventDefault();
+                var username = $("#username").val();
+                var email = $("#email").val();
+                var contact = $("#contact").val();
+                var password = $("#password").val();
+                var errorMessage = "";
+
+                if (username == "") {
+                    errorMessage += "Username cannot be empty.<br>";
+                }
+                if (email == "") {
+                    errorMessage += "Email cannot be empty.<br>";
+                } else {
+                    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (!emailPattern.test(email)) {
+                        errorMessage += "Email format is incorrect.<br>";
+                    }
+                }
+                if (contact == "") {
+                    errorMessage += "Contact number cannot be empty.<br>";
+                }
+                if (password == "") {
+                    errorMessage += "Password cannot be empty.<br>";
+                }
+
+                if (errorMessage != "") {
+                    $("#errorMessage").html(errorMessage);
+                } else {
+                    $("#errorMessage").html("<b>Form submitted successfully!</b>");
+                }
+            });
+        });
+    </script>
+</body>
+</html>

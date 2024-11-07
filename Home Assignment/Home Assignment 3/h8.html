@@ -1,0 +1,44 @@
+<!-- Create a webpage that includes a text box and a button. Write jQuery code that removes 
+the element with an ID matching the text entered in the text box when the button is 
+clicked. The webpage should initially contain a <div> with paragraphs, each having a 
+unique ID -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H8</title>
+    <style>
+        div{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+           $("#removeElement").click(function(){
+               var elementId = $("#elementId").val();
+               if(elementId!="")
+                  $("#"+elementId).remove();
+                else
+                   alert("Enter element ID");
+           });
+        });
+    </script>
+</head>
+<body>
+    <div id="content">
+        <p id="1">This is Paragraph 1</p>
+        <p id="2">This is Paragraph 2</p>
+        <p id="3">This is Paragraph 3</p>
+    </div>
+    <br>
+    <div id="text-box">
+        <input type="text" id="elementId" placeholder="Enter element ID" class="hoverable"> <br> <br>
+        <button id="removeElement" class="hoverable">Remove Element</button>
+    </div>
+</body>
+</html>
