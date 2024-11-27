@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Button</title>
+    <link rel="stylesheet" href=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+    </script>
+    <script src=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+    </script>
+</head>
+<body>
+    <div class="container">
+
+        <h1>Types of Button in Bootstrap</h1>
+        <button type="button" class="btn">Simple Button</button>
+        <button type="button" class="btn btn-success">Success Button</button>
+        <button type="button" class="btn btn-warning">Warning Button</button>
+        <button type="button" class="btn btn-danger">Danger Button</button>
+        <button type="button" class="btn btn-primary">Primary Button</button>
+        <button type="button" class="btn btn-secondary">Secondary Button</button>
+        <button type="button" class="btn btn-link">Link Button</button>
+        <button type="button" class="btn btn-dark">Dark Button</button>
+        <button type="button" class="btn btn-info btn-block">Info</button>
+        <button type="button" class="btn btn-light">Light Button</button>
+    </div>
+    <div class="container">
+        <h2>Button Outline and Size</h2>
+        <button type="button" class="btn btn-outline-success">Success Button</button>
+        <button type="button" class="btn btn-outline-warning">Warning Button</button>
+        <button type="button" class="btn btn-outline-danger">Danger Button</button>
+        <button type="button" class="btn btn-outline-primary">Primary Button</button>
+        <button type="button" class="btn btn-outline-secondary">Secondary Button</button>
+        <button type="button" class="btn btn-outline-link">Link Button</button>
+        <button type="button" class="btn btn-outline-dark">Dark Button</button>
+        <button type="button" class="btn btn-outline-info">Info Button</button>
+        <button type="button" class="btn btn-outline-light text-dark">Light Button</button>
+    </div>
+    <div class="container">
+        <h3>Button Active or Disabled view</h3>
+        <button type="button" class="btn btn-primary active">Active Primary</button>
+<button type="button" class="btn btn-primary" disabled>Disabled Primary</button>
+<a href="#" class="btn btn-primary disabled">Disabled Link</a>
+    </div>
+    <div class="container">
+        <h3>Grouped Buttons</h3>
+        <p>By using the .btn-group we can create display multiple buttons</p>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary">Enter</button>
+            <button type="button" class="btn btn-primary">Cancel</button>
+            <button type="button" class="btn btn-primary">Reset</button>
+          </div>
+    </div>
+    <div class="container">
+        <h3>Grouped Buton Sizes</h3>
+        <h4>By using the .btn-group, we can create display multiple buttons </h4>
+        <p>With btn-lg group in large size:</p>
+        <div class="btn-group-vertical btn-group-lg">
+            <button type="button" class="btn btn-primary">Enter</button>
+            <button type="button" class="btn btn-primary">Cancel</button>
+            <button type="button" class="btn btn-primary">Reset</button>
+          </div>
+        <p>With btn-md group in small size:</p>
+        <div class="btn-group-vertical btn-group-md">
+            <button type="button" class="btn btn-primary">Enter</button>
+            <button type="button" class="btn btn-primary">Cancel</button>
+            <button type="button" class="btn btn-primary">Reset</button>
+          </div>
+        <p>With btn-sm group in small size:</p>
+        <div class="btn-group-vertical btn-group-sm">
+            <button type="button" class="btn btn-primary">Enter</button>
+            <button type="button" class="btn btn-primary">Cancel</button>
+            <button type="button" class="btn btn-primary">Reset</button>
+          </div>
+    </div>
+    <div class="container">
+        <h3>Dropdown Menus</h3>
+        <p>To create dropdown menu add one button group inside another</p>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary">Cybersecurity</button>
+            <button type="button" class="btn btn-primary">Mobile App Development</button>
+            <div class="btn-group">
+              <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                 Web Development
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">HTML</a>
+                <a class="dropdown-item" href="#">CSS</a>
+                <a class="dropdown-item" href="#">JS</a>
+              </div>
+            </div>
+          </div>
+    </div>
+</body>
+</html>
