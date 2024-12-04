@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="btn-group" role="group" aria-label="Button group">
+            <button type="button" class="btn btn-primary" onclick="displayAlert('Option 1')">Option 1</button>
+            <button type="button" class="btn btn-primary" onclick="displayAlert('Option 2')">Option 2</button>
+            <button type="button" class="btn btn-primary" onclick="displayAlert('Option 3')">Option 3</button>
+        </div>
+        <div class="mt-4">
+            <button type="button" class="btn btn-success" onclick="startProgressBar()">Start Progress Bar</button>
+            <div class="progress mt-2">
+                <div id="progressBar" class="progress-bar" role="progressbar" style="width:0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+        <div class="mt-4">
+            <ul class="pagination">
+                <li id="b1" class="page-item"><a href="#" class="page-link">1</a></li>
+                <li class="page-item"><a href="#" class="page-link" onclick="displayAlert('Page 2')">2</a></li>
+                <li class="page-item"><a href="#" class="page-link" onclick="displayAlert('Page 3')">3</a></li>
+                <li class="page-item"><a href="#" class="page-link" onclick="displayAlert('Page 4')">4</a></li>
+                <li class="page-item"><a href="#" class="page-link" onclick="displayAlert('Page 5')">5</a></li>
+            </ul>
+            <div id="message"></div>
+        </div>
+        <div id="custom_alert"></div>
+    </div>
+    <script>
+        function displayAlert(param) {
+            var content = `<div class="alert alert-warning alert-dismissible fade show" role="alert">
+                            <strong>Custom Alert:</strong> ${param}
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span></button>
+                            </div>`;
+            $("#custom_alert").append(content);
+        }
+
+        $(document).ready(function() {
+            $("#b1").click(function() {
+                displayAlert("Page 1");
+            });
+        });
+
+        function startProgressBar() {
+            var progressBar = document.getElementById("progressBar");
+            var width = 0;
+            var interval = setInterval(function() {
+                if (width >= 100) {
+                    clearInterval(interval);
+                    displayAlert("Progress Complete!");
+                } else {
+                    width += 2;
+                    progressBar.style.width = width + "%";
+                    progressBar.setAttribute("aria-valuenow", width);
+                }
+            }, 100);
+        }
+    </script>
+</body>
+</html>
