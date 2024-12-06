@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+    </script>
+    <script src=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Nav Menu Examples</h1>
+         <ul class="nav">
+            <li class="nav-item">
+                <a href="#" class="nav-link">First Item</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Second Item</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Third Item</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Fourth Item</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Fifth Item</a>
+            </li>
+         </ul>
+        </div>
+        <div class="container-fluid">
+            <h2>Tabs</h2>
+            <ul class="nav nav-tabs">
+               <li class="nav-item">
+                   <a href="#" class="nav-link">First Item</a>
+               </li>
+               <li class="nav-item">
+                   <a href="#" class="nav-link">Second Item</a>
+               </li>
+               <li class="nav-item">
+                   <a href="#" class="nav-link">Third Item</a>
+               </li>
+               <li class="nav-item">
+                   <a href="#" class="nav-link">Fourth Item</a>
+               </li>
+               <li class="nav-item">
+                   <a href="#" class="nav-link">Fifth Item</a>
+               </li>
+            </ul>
+        </div>
+        <div class="container-fluid">
+            <h2>Pills</h2>
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">Active</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link disabled">Disabled</a>
+                </li>
+             </ul>
+        </div>
+        <div class="container-fluid">
+            <h2>Pills with dropdown</h2>
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">Active</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">Link 1</a>
+                        <a href="#" class="dropdown-item">Link 2</a>
+                        <a href="#" class="dropdown-item">Link 3</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link disabled">Disabled</a>
+                </li>
+            </ul>
+        </div>
+        <div class="container-fluid">
+            <h2>Toggleable Tab</h2>
+            <br>
+            <ul class="nav nav-tabs" role="tablist">
+                  <li class="nav-item">
+                     <a href="#home" class="nav-link" data-toggle="tab">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="#menu1" class="nav-link" data-toggle="tab">Menu 1</a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="#menu2" class="nav-link" data-toggle="tab">Menu 2</a>
+                  </li>
+            </ul>
+            <div class="tab-content">
+                <div id="home" class="container tab-pane active">
+                    <br>
+                    <h3>HOME</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div id="menu1" class="container tab-pane fade">
+                    <br>
+                    <h3>Menu1</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div id="menu2" class="container tab-pane fade">
+                    <br>
+                    <h3>Menu2</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <h2>Toggleable Pills</h2>
+            <br>
+            <!-- Nav Pills for Tab Switching -->
+            <ul class="nav nav-pills" role="tablist">
+                <li class="nav-item">
+                    <a href="#home-pills" class="nav-link active" data-toggle="tab">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu1-pills" class="nav-link" data-toggle="tab">Menu 1</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu2-pills" class="nav-link" data-toggle="tab">Menu 2</a>
+                </li>
+            </ul>
+        
+            <!-- Tab Content -->
+            <div class="tab-content">
+                <div id="home-pills" class="container tab-pane active show">
+                    <br>
+                    <h3>HOME</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div id="menu1-pills" class="container tab-pane fade">
+                    <br>
+                    <h3>Menu1</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div id="menu2-pills" class="container tab-pane fade">
+                    <br>
+                    <h3>Menu2</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+        </div>
+        
+</body>
+</html>
