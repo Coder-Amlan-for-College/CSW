@@ -1,62 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>H5</title>
-    <link rel="stylesheet" href=
-"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src=
-"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-    </script>
-    <script src=
-"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
-    </script>
-    <script src=
-"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
-    </script>
 
+<head>
+    <title>Q4</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+    </script>
 </head>
+
 <body>
-    <div class="container mt-3">
-        <div class="dropdown">
-            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-              Category 1
-            </button>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Subcategory 1</a>
-              <a class="dropdown-item" href="#">Subcategory 2</a>
-              <a class="dropdown-item" href="#">Subcategory 3</a>
-            </div>
-            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                Category 2
-              </button>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Subcategory 1</a>
-                <a class="dropdown-item" href="#">Subcategory 2</a>
-                <a class="dropdown-item" href="#">Subcategory 3</a>
-              </div>
-              <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Category 3</button>
-              <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">Subcategory 1</a>
-                  <a class="dropdown-item" href="#">Subcategory 2</a>
-                  <a class="dropdown-item" href="#">Subcategory 3</a>
-                </div>  
-          </div>
-        </div>
-    </div>
-    <br>
     <div class="container">
-        <div class="dropdown">
-            <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" >Category</button>
-            <ul class="dropdown-menu">
-                <li class="dropdown-item"><button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Category 1</button>
-                <ul class="dropdown-menu">
-                    <li><a href="#" class="dropdown-item">Subcategory 1</a></li>
-                </ul>
-                </li>
-            </ul>
+        <div class="btn-group ">
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Category 1
+                </button>
+                <div class="dropdown-menu">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">nexted link 1</button>
+                    <div class="dropdown-menu">
+
+                        <a href="https://yahoo.com" target="_blank" class="dropdown-item bg-warning">Subcategory 1</a>
+                        <a href="https://google.com" class="dropdown-item bg-secondary">Subcategory 2</a>
+                        <a href="https://facebook.com" class="dropdown-item bg-success"> Subcategoty 3</a>
+                        <a href="https://linkedin.com" class="dropdown-item bg-danger">Subcategory 4</a>
+                    </div>
+                    <button type="button" class="btn btn-primary dropdown-toggle my-4" data-toggle="dropdown">nexted link 2</button>
+                    <div class="dropdown-menu">
+
+                        <a href="https://yahoo.com" target="_blank" class="dropdown-item bg-warning">Subcategory 1</a>
+                        <a href="https://google.com" class="dropdown-item bg-secondary">Subcategory 2</a>
+                        <a href="https://facebook.com" class="dropdown-item bg-success"> Subcategoty 3</a>
+                        <a href="https://linkedin.com" class="dropdown-item bg-danger">Subcategory 4</a>
+                    </div>
+
+                </div>
+                
+            </div>
+            <div class="btn-group">
+                <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">Category 2</button>
+                <div class="dropdown-menu">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Nested Subcategory 1</button>
+                    <div class="dropdown-menu">
+
+                        <a href="https://yahoo.com" target="_blank" class="dropdown-item bg-warning">Subcategory link 1</a>
+                        <a href="https://google.com" class="dropdown-item bg-secondary">Subcategory link 2</a>
+                        <a href="https://facebook.com" class="dropdown-item bg-success"> Subcategoty link 3</a>
+                        <a href="https://linkedin.com" class="dropdown-item bg-danger">Subcategory link 4</a>
+                    </div>
+                    <button type="button" class="btn btn-primary dropdown-toggle my-4" data-toggle="dropdown">Nested Subcategory 2</button>
+                    <div class="dropdown-menu">
+
+                        <a href="https://yahoo.com" target="_blank" class="dropdown-item bg-warning">Subcategory 1</a>
+                        <a href="https://google.com" class="dropdown-item bg-secondary">Subcategory 2</a>
+                        <a href="https://facebook.com" class="dropdown-item bg-success"> Subcategoty 3</a>
+                        <a href="https://linkedin.com" class="dropdown-item bg-danger">Subcategory 4</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Category 3</button>
+                <div class="dropdown-menu">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Nested Subcategory 1</button>
+                    <div class="dropdown-menu">
+
+                        <a href="https://yahoo.com" target="_blank" class="dropdown-item bg-warning">Subcategory 1</a>
+                        <a href="https://google.com" class="dropdown-item bg-secondary">Subcategory 2</a>
+                        <a href="https://facebook.com" class="dropdown-item bg-success"> Subcategoty 3</a>
+                        <a href="https://linkedin.com" class="dropdown-item bg-danger">Subcategory 4</a>
+                    </div>
+                    <br>
+                    <button type="button" class="btn btn-primary dropdown-toggle my-4" data-toggle="dropdown">Nested Subcategory 2</button>
+                    <div class="dropdown-menu">
+
+                        <a href="https://yahoo.com" target="_blank" class="dropdown-item bg-warning">Subcategory 1</a>
+                        <a href="https://google.com" class="dropdown-item bg-secondary">Subcategory 2</a>
+                        <a href="https://facebook.com" class="dropdown-item bg-success"> Subcategoty 3</a>
+                        <a href="https://linkedin.com" class="dropdown-item bg-danger">Subcategory 4</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="btn-group">
+                <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">Category 4</button>
+                <div class="dropdown-menu">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Nested Subcategory 1</button>
+                    <div class="dropdown-menu">
+
+                        <a href="https://yahoo.com" target="_blank" class="dropdown-item bg-warning">Subcategory 1</a>
+                        <a href="https://google.com" class="dropdown-item bg-secondary">Subcategory 2</a>
+                        <a href="https://facebook.com" class="dropdown-item bg-success"> Subcategoty 3</a>
+                        <a href="https://linkedin.com" class="dropdown-item bg-danger">Subcategory 4</a>
+                    </div>
+                    <button type="button" class="btn btn-primary dropdown-toggle my-4" data-toggle="dropdown">Nested Subcategory 2</button>
+                    <div class="dropdown-menu">
+
+                        <a href="https://yahoo.com" target="_blank" class="dropdown-item bg-warning">Subcategory 1</a>
+                        <a href="https://google.com" class="dropdown-item bg-secondary">Subcategory 2</a>
+                        <a href="https://facebook.com" class="dropdown-item bg-success"> Subcategoty 3</a>
+                        <a href="https://linkedin.com" class="dropdown-item bg-danger">Subcategory 4</a>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </div>
+
 </body>
+
 </html>
